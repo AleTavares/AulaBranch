@@ -23,7 +23,7 @@ def main():
             if num2 != 0:
                 result = divide(num1, num2)
             else:
-                result = "Erro: Divisão por zero"
+                result = "ª"
         
         st.write(f"Resultado: {result}")
 

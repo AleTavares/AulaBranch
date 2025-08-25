@@ -2,7 +2,7 @@ import streamlit as st
 from utils.calculator import add, subtract, multiply, divide
 
 def main():
-    st.title("Calculadora Simples")
+    st.title("Calculadora Básica com 4 operações")
     
     # Entrada do usuário para os números
     num1 = st.number_input("Digite o primeiro número", value=0.0)

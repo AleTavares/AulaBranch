@@ -8,15 +8,14 @@ def main():
     num1 = st.number_input("Digite o primeiro número", value=0.0)
     num2 = st.number_input("Digite o segundo número", value=0.0)
     
-    # Entrada do usuário para a operação
+    # Tamo junto
     operation = st.selectbox("Selecione a operação", ["Somar", "Subtrair", "Multiplicar", "Dividir"])
     
     # Calcular e exibir o resultado
     if st.button("Calcular"):
         if operation == "Somar":
             result = add(num1, num2)
-        elif operation == "Subtrair":
-            result = subtract(num1, num2)
+       
         elif operation == "Multiplicar":
             result = multiply(num1, num2)
         elif operation == "Dividir":
@@ -26,6 +25,7 @@ def main():
                 result = "Erro: Divisão por zero"
         
         st.write(f"Resultado: {result}")
+        
 
 if __name__ == "__main__":
     main()

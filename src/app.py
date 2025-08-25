@@ -5,8 +5,8 @@ def main():
     st.title("Calculadora Simples")
     
     # teste teste teste
-    num1 = st.number_input("Digite o primeiro número", value=0.0)
-    num2 = st.number_input("Digite o segundo número", value=0.0)
+    number1 = st.number_input("Digite o primeiro número", value=0.0)
+    number2 = st.number_input("Digite o segundo número", value=0.0)
     
     # Entrada do usuário para a operação
     operation = st.selectbox("Selecione a operação", ["Somar", "Subtrair", "Multiplicar", "Dividir"])

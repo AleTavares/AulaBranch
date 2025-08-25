@@ -14,7 +14,6 @@ def main():
     # Calcular e exibir o resultado
     if st.button("Calcular"):
         if operation == "Somar":
-            result = add(num1, num2)
         elif operation == "Subtrair":
             result = subtract(num1, num2)
         elif operation == "Multiplicar":
@@ -29,3 +28,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    lucashenrique6324537

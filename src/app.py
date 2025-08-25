@@ -17,8 +17,6 @@ def main():
             result = add(num1, num2)
         elif operation == "Subtrair":
             result = subtract(num1, num2)
-        elif operation == "Multiplicar":
-            result = multiply(num1, num2)
         elif operation == "Dividir":
             if num2 != 0:
                 result = divide(num1, num2)

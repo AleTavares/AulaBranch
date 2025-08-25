@@ -5,8 +5,8 @@ def main():
     st.title("Calculadora Simples")
     
     # Entrada do usuário para os números
-    num1 = st.number_input("Digite o primeiro número", value=0.0)
-    num2 = st.number_input("Digite o segundo número", value=0.0)
+    num1 = st.number_input("abluble", value=0.0)
+    num2 = st.number_input("SonicPelado", value=0.0)
     
     # Entrada do usuário para a operação
     operation = st.selectbox("Selecione a operação", ["Somar", "Subtrair", "Multiplicar", "Dividir"])
@@ -17,7 +17,7 @@ def main():
             result = add(num1, num2)
         elif operation == "Subtrair":
             result = subtract(num1, num2)
-        elif operation == "Multiplicar":
+  
             result = multiply(num1, num2)
         
         st.write(f"Resultado: {result}")

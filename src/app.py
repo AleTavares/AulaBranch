@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.calculator import add, subtract, multiply, divide
+from utils.calculator import add, subtract, multiply, divide, square  # Importando a função square
 
 def main():
     st.title("Calculadora Simples")
@@ -9,7 +9,7 @@ def main():
     num2 = st.number_input("Digite o segundo número", value=0.0)
     
     # Entrada do usuário para a operação
-    operation = st.selectbox("Selecione a operação", ["Somar", "Subtrair", "Multiplicar", "Dividir"])
+    operation = st.selectbox("Selecione a operação", ["Somar", "Subtrair", "Multiplicar", "Dividir", "Elevar ao Quadrado"])
     
     # Calcular e exibir o resultado
     if st.button("Calcular"):
@@ -20,10 +20,12 @@ def main():
         elif operation == "Multiplicar":
             result = multiply(num1, num2)
         elif operation == "Dividir":
-            if num2 != 0:
+            try:
                 result = divide(num1, num2)
-            else:
-                result = "Erro: Divisão por zero"
+            except ValueError as e:
+                result = str(e)  # Tratando erro de divisão por zero
+        elif operation == "Elevar ao Quadrado":
+            result = square(num1)  # Usando a função de elevar ao quadrado
         
         st.write(f"Resultado: {result}")
 

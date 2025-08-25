@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.calculator import add, subtract, multiply, divide
+from utils.calculator import add, subtract, multiply, 
 
 def main():
     st.title("Calculadora Simples")

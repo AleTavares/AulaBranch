@@ -11,8 +11,7 @@ def main():
     # Entrada do usuário para a operação
     operation = st.selectbox("Selecione a operação", ["Somar", "Subtrair", "Multiplicar", "Dividir"])
     
-    # Calcular e exibir o resultado
-    if st.button("Calcular"):
+    # Calcular e exibir o resultado (MUDAR AQUI O IF BRUNO HENRIQUE)
         if operation == "Somar":
             result = add(num1, num2)
         elif operation == "Subtrair":

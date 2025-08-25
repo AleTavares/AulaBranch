@@ -20,6 +20,7 @@ git commit -m "Alterando algo na Branch feature/criar_sh_aula"
 # Faça um push das alterações para a branch
 git push origin feature/criar_sh_aula
 
+
 # Crie um PullRequest - No portal do GitHub
 
 # Muda de volta para a branch principal
@@ -33,3 +34,6 @@ git branch -d minha-nova-funcionalidade
 
 # Deleta a branch no repositório remoto
 git push origin --delete minha-nova-funcionalidade
+
+
+# Tais Gomes esteve aqui, que a força esteja com vc!

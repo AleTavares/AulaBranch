@@ -20,7 +20,3 @@ def main():
         elif operation == "Multiplicar":
             result = multiply(num1, num2)
         
-        st.write(f"Resultado: {result}")
-
-if __name__ == "__main__":
-    main()

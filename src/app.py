@@ -20,9 +20,7 @@ def main():
         elif operation == "Multiplicar":
             result = multiply(num1, num2)
         elif operation == "Dividir":
-            if num2 != 0:
-                result = divide(num1, num2)
-            else:
+            if num2 == 0:
                 result = "Erro: Divisão por zero"
         
         st.write(f"Resultado: {result}")

@@ -1,3 +1,9 @@
+ls # lista as pastas
+
+cd <nome pasta> # entra na pasta
+
+mkdir <nome pasta> # cria pasta
+
 # Sincroniza a branch 'main' (ou 'master') com a última versão do repositório
 git pull origin main
 

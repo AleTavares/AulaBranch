@@ -16,11 +16,20 @@ def main():
         if operation == "Somar":
             result = add(num1, num2)
         elif operation == "Subtrair":
-            result = subtract(num1, num2)
+           result = subtract(num1, num2)
+ main
+        elif operation == "Dividir":
+            if num2 != 0:
+                result = divide(num1, num2)
+            else:
+                result = "Erro: Divisão por zero"
         elif operation == "Multiplicar":
             result = multiply(num1, num2)
+ main
         
         st.write(f"Resultado: {result}")
+
+        #sera que roda ?
 
 if __name__ == "__main__":
     main()

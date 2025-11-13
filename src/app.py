@@ -15,8 +15,6 @@ def main():
     if st.button("Calcular"):
         if operation == "Somar":
             result = add(num1, num2)
-        elif operation == "Subtrair":
-            result = subtract(num1, num2)
         elif operation == "Multiplicar":
             result = multiply(num1, num2)
         
